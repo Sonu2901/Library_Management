@@ -2,7 +2,7 @@ const express=require("express");
 const bodyParser=require("body-parser");
 const mongoose=require("mongoose");
 const fetch = require('node-fetch');
-mongoose.connect("mongodb+srv://admin-ujjwal:test123@cluster0.jbpqb.mongodb.net/libraryDB",{useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/MyDB",{useNewUrlParser: true});
 
 const app=express();
 app.set('view engine', 'ejs');
